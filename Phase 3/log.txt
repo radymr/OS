@@ -1,0 +1,265 @@
+ -- Initializing Operating System -- 
+ -- Assembler Initiated --
+ -- Virtual Machine Initialized -- 
+job: simple1.s
+ simple1.s successfully opened..
+
+  sending opcode: loadi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: addi to Virtual Machine..
+  sending opcode: write to Virtual Machine..
+  sending opcode: halt to Virtual Machine..
+  sending opcode: halt to Virtual Machine..
+simple1.o
+  mem0:257
+simple1.o
+  mem1:4353
+simple1.o
+  mem2:4353
+simple1.o
+  mem3:4353
+simple1.o
+  mem4:4353
+simple1.o
+  mem5:4353
+simple1.o
+  mem6:4353
+simple1.o
+  mem7:4353
+
+inPCB->PCBpc    0
+inPCB->PCBbase    0
+inPCB->PCBlimit    8
+inPCB->PCBinterruptTime    0
+inPCB->PCBsp    256
+inPCB->PCBwaitTime    0
+inPCB->PCBio_time    0
+inPCB->PCBclock    0
+reg[0]: 0
+reg[1]: 0
+reg[2]: 0
+reg[3]: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+
+job: simple2.s
+ simple2.s successfully opened..
+
+  sending opcode: loadi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: subi to Virtual Machine..
+  sending opcode: write to Virtual Machine..
+  sending opcode: halt to Virtual Machine..
+  sending opcode: halt to Virtual Machine..
+simple2.o
+  mem8:868
+simple2.o
+  mem9:8961
+simple2.o
+  mem10:8961
+simple2.o
+  mem11:8961
+simple2.o
+  mem12:8961
+simple2.o
+  mem13:8961
+simple2.o
+  mem14:8961
+simple2.o
+  mem15:8961
+
+inPCB->PCBpc    8
+inPCB->PCBbase    8
+inPCB->PCBlimit    16
+inPCB->PCBinterruptTime    0
+inPCB->PCBsp    256
+inPCB->PCBwaitTime    0
+inPCB->PCBio_time    0
+inPCB->PCBclock    0
+reg[0]: 0
+reg[1]: 0
+reg[2]: 0
+reg[3]: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+
+ Program counter = 0
+ Instruction Register = 0
+
+OP = 0 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 1
+ Program counter = 1
+ Instruction Register = 257
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 2
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 3
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 4
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 5
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 6
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+ Program counter = 7
+ Instruction Register = 4353
+
+OP = 2 Destination Register = 0 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 5
+
+inPCB->PCBpc    8
+inPCB->PCBbase    0
+inPCB->PCBlimit    8
+inPCB->PCBinterruptTime    0
+inPCB->PCBsp    256
+inPCB->PCBwaitTime    0
+inPCB->PCBio_time    0
+inPCB->PCBclock    8
+reg[0]: 8
+reg[1]: 0
+reg[2]: 0
+reg[3]: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+
+ Program counter = 8
+ Instruction Register = 4353
+
+OP = 0 Destination Register = 1 I = 1
+Source Register = 1 Constant = 100 Address = 100
+opcode = 1
+ Program counter = 9
+ Instruction Register = 868
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 10
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 11
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 12
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 13
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 14
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+ Program counter = 15
+ Instruction Register = 8961
+
+OP = 4 Destination Register = 1 I = 1
+Source Register = 0 Constant = 1 Address = 1
+opcode = 9
+
+inPCB->PCBpc    16
+inPCB->PCBbase    8
+inPCB->PCBlimit    16
+inPCB->PCBinterruptTime    0
+inPCB->PCBsp    256
+inPCB->PCBwaitTime    0
+inPCB->PCBio_time    0
+inPCB->PCBclock    8
+reg[0]: 0
+reg[1]: 93
+reg[2]: 0
+reg[3]: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+
+  ** Page Fault! ** 
+
+inPCB->PCBpc    8
+inPCB->PCBbase    0
+inPCB->PCBlimit    8
+inPCB->PCBinterruptTime    0
+inPCB->PCBsp    256
+inPCB->PCBwaitTime    0
+inPCB->PCBio_time    0
+inPCB->PCBclock    8
+reg[0]: 8
+reg[1]: 0
+reg[2]: 0
+reg[3]: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+mem: 0
+

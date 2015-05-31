@@ -1,0 +1,33 @@
+
+.st file is an input/output file and contains the stack when the process is not running
+
+	only one stack (of the running program) at a time resides in memory. 
+
+	When VM is allocated to a process, its stack is read into high memory from its .st file; and when 	a process relinquishes VM, its stack is written onto its .st file. By examining the value of sp 		register, the OS can tell whether .st file has to be saved. 
+
+	When a process relinquishes VM and sp = 256 in the VM, there is no stack and therefore there is 	nothing to save.
+
+	Otherwise, when sp < 256, there is a stack and its content must be saved for future restart.
+
+	Analogously, when a process is assigned to the VM, if sp in its PCB is less than 256 then it has 	a stack and it needs to be loaded from its .st into memory. 
+
+	Remove this file when its corresponding process halts. 
+
+When the OS comes up it looks in the current directory and gathers all .s files:
+
+	     system("ls *.s > progs");
+
+	It then opens progs and reads the file names. Each file is assembled, its object code loaded in 	memory, and a pointer to its PCB is stored in a linked-list:
+
+	     list<PCB *> jobs;
+	     PCB * p = new PCB;
+	     jobs.push_back(p);
+
+The processes (PCBs) are either in the ready, waiting, or running state. Maintain two queues of processes, Ready Queue and Wait Queue. The queues are of type pointer to PCB:
+
+	     queue<PCB *> readyQ, waitQ;
+
+	The running process is also represented by a pointer to PCB:
+
+	     PCB * running;
+
